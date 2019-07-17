@@ -27,30 +27,43 @@ html {
 }
 
 .icons-social i {
-    font-size: 4em;
+    font-size: 6em;
+    align-self: center;
+    align-items: center;
+}
+
+.icon-text {
+font-size: 2em;
+
+    
 }
 
 main {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100px;
     justify-content: center;
     padding: 0 30px;
     text-align: center;
 }
 
-main > .intro {
-    font-family: 'Reem Kufi', sans-serif;
-    font-size: 3.75em;
+main .intro {
+font-family: 'Share Tech Mono', monospace;  
+font-size: 3.75em;
     font-weight: 100;
-    padding: 30px;
+    margin: 10px;
+    padding: 10px;
+    line-height: 50px;
+    
 }
 
 main > .tagline {
     font-family: monospace;
     font-size: 1.5em;
     font-weight: 100;
-    margin: 1.5rem 0
+    margin: 20px;
+    padding: 20px;
+    
 
 }
 
@@ -61,12 +74,14 @@ main > .tagline {
 
 .icons-social i {
     padding: 20px;
+    color: #00000;
 }
 
 h2.tech-header {
-    font-family: 'Reem Kufi', sans-serif;
+    font-family: 'Roboto'
     font-size: 2rem;
     padding: 20px;
+
 }
 
 main > .icons-tech h2 {
@@ -85,7 +100,49 @@ main > .icons-tech h2 {
 	height: 2.65rem;
 }
 
+.icons-tech {
+  font-family:'Reem Kufi', sans-serif;
+  justify-content: center;
+  font-size: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-gap: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+.mdc-elevation--z1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  
+  fill-opacity: inherit;
+  border-radius: 50px;
+}
+ .card-image {
+  height: 200px;
+  width: auto;
+  float: left;
+  object-position: inherit;
+  border-radius: 60%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.card-title {
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.text-overlay {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 1.5em;
+  align-content: flex-start;
+}
+
 .contact-header {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
     font-size: 1.5em;
 }
