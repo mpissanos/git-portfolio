@@ -36,27 +36,22 @@ main {
     text-align: center;
 }
 
-.intro-container{
-  position: relative;
-  display: inline;
-  min-width: 100%;
-  min-height: 200px;
-	animation: color-change-2x 2s linear 2 alternate both;
+.header-container{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  padding: 20px 0 20px;
 }
 
-@keyframes color-change-2x {
-  0% {
-    background: rgb(124, 83, 219);
-  }
-  100% {
-    background: #b22cff;
-  }
-}
-
-.intro-text {
-  color: white;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 6em;
+.header-text {
+ text-align: left;
+  font-family: Corbel;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+  color: rgba(25,167,238,1);
 }
 
 .icons-social i {
@@ -101,12 +96,13 @@ font-size: 2em;
   }
 }
 
-main > .tagline {
-    font-family: 'roboto';
-    font-size: 1.5em;
+#tagline {
+    font-family: 'Major Mono', sans-serif;
+    font-size: 1.2em;
     margin: 10px;
     padding: 20px;
-    min-width: 60%;
+    min-width: 50%;
+    color: black;
 }
 
 .contact-form {
@@ -146,36 +142,36 @@ main > .tagline {
 }
 
 
-.card {
+.about-me-container {
   padding: 20px;
   max-width: 100%;
   border-radius: 30px;
   transition: 1s;
 }
 
-.card h2 {
+.about-me-container h2 {
   font-weight: 600;
   font-size: 2em;
   margin: 10px;
   padding: 10px;
 }
 
- .card-image {
+ .about-me-avatar {
   height: 300px;
   width: auto;
   border-radius: 60%;
-  float: left;
   margin: 20px;
   display: inline-block;
+  clip-path: polygon(0 0, 40%);
 }
 
-.text-overlay p {
+.about-me-container p {
   font-family:  'Roboto';
   font-size: 1.2em;
   display: inline-block;
 }
 
-.contact-container div{
+.contact-container{
   text-align: center;
     font-size: 1.2em;
     margin: 20px;
@@ -185,4 +181,8 @@ main > .tagline {
   color: black;
   padding: 10px;
   margin: auto;
+}
+
+.contact-container i:hover {
+  color: rgb(124, 83, 219)
 }
