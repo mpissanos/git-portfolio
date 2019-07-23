@@ -1,4 +1,4 @@
-html {
+body, html {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -26,163 +26,45 @@ html {
     }
 }
 
-main {
-    display: grid;
-    flex-direction: column;
-    min-height: 100px;
-    justify-content: center;
-    padding: 0;
-    margin: 0px 10px 0px 10px;
-    text-align: center;
-}
+body{
+  margin: 10px 40px;
+  display: grid;
 
-.header-container{
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4 auto);
+  grid-template-areas: 
+  "header header header header"
+  "row2-left row2-left row2-right row2-right"
+  "row3-left row3-left row3-right row3-right"
+  "row4-left row4-left row4-right row4-right"
+  "row5-left row5-left row5-right row5-right"
+  "footer1 footer1 footer2 footer2"
+
+}
+header{
+  grid-area: header;
   top: 0;
   left: 0;
   width: 100%;
-  height: 200px;
-  padding: 20px 0 20px;
+  height: 160px;
 }
 
-.header-text {
- text-align: left;
-  font-family: Corbel;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 45px;
-  text-align: center;
+header #headline {
+  text-align: left;
+  font-family: 'Joschmi';
+  font-size: 106px;
   color: rgba(25,167,238,1);
 }
 
-.icons-social i {
-    font-size: 6em;
-    align-self: center;
-    align-items: center;
-    transition: all 200ms ease;
-}
-
-.icons-social i:hover {
-    color: blue;
-    transform: scale(1.3);
-    
-}
-
-.icon-text {
-font-size: 2em;
-
-    
-}
-
-.logo {
-  max-width: 300px; 
-  z-index: 1;
-  float: left;
-  vertical-align: center;
-  animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-          
-}
-
-
-@keyframes slide-in-right {
-  0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-#tagline {
-    font-family: 'Major Mono', sans-serif;
-    font-size: 1.2em;
-    margin: 10px;
-    padding: 20px;
-    min-width: 50%;
-    color: black;
-}
-
-.contact-form {
-    justify-content: center;
-}
-
-.icons-social i {
-    padding: 20px;
-}
-
-.tech-header {
-    font-family: 'Roboto';
-    font-size: 1.3rem;
-    margin-top: 25px;
-    padding: 20px;
+.social-container {
+  grid-area: row2-left;
 
 }
 
-.icons-tech h2 {
-    font-size: 1rm;
-}
-
-.icons-tech {
-  font-family:'Reem Kufi', sans-serif;
-  justify-content: center;
-  font-size: 70px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-  grid-gap: 20px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.icons-tech i {
-  color: rgb(124, 83, 219)
+.social-container #social-icon{
+  display: block;
+  width: 30%;
 }
 
 
-.about-me-container {
-  padding: 20px;
-  max-width: 100%;
-  border-radius: 30px;
-  transition: 1s;
-}
 
-.about-me-container h2 {
-  font-weight: 600;
-  font-size: 2em;
-  margin: 10px;
-  padding: 10px;
-}
-
- .about-me-avatar {
-  height: 300px;
-  width: auto;
-  border-radius: 60%;
-  margin: 20px;
-  display: inline-block;
-  clip-path: polygon(0 0, 40%);
-}
-
-.about-me-container p {
-  font-family:  'Roboto';
-  font-size: 1.2em;
-  display: inline-block;
-}
-
-.contact-container{
-  text-align: center;
-    font-size: 1.2em;
-    margin: 20px;
-}
-
-.contact-container i {
-  color: black;
-  padding: 10px;
-  margin: auto;
-}
-
-.contact-container i:hover {
-  color: rgb(124, 83, 219)
-}
