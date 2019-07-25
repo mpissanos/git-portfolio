@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1459" height="574" viewBox="0 0 1459 574">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="1459" height="574" fill="none"/>
+    </clipPath>
+    <filter id="Rectangle_468" x="0" y="0" width="389" height="515" filterUnits="userSpaceOnUse">
+      <feOffset dx="32" dy="40" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-opacity="0.702"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Component_28_1" data-name="Component 28 – 1" clip-path="url(#clip-path)">
+    <rect id="Rectangle_460" data-name="Rectangle 460" width="1390" height="406" transform="translate(69 46)" fill="none"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_468)">
+      <g id="Rectangle_468-2" data-name="Rectangle 468" fill="#fff" stroke="#000" stroke-width="2">
+        <rect width="357" height="475" stroke="none"/>
+        <rect x="1" y="1" width="355" height="473" fill="none"/>
+      </g>
+    </g>
+    <text id="SKILLS_LANGUAGES" data-name="SKILLS &amp; LANGUAGES" transform="translate(16 46)" fill="#707070" font-size="100" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600" letter-spacing="0.011em"><tspan x="0" y="108">SKILLS </tspan><tspan x="0" y="178">&amp; </tspan><tspan x="0" y="248">LANGU</tspan><tspan x="0" y="318">AGES</tspan></text>
+  </g>
+</svg>
