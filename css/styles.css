@@ -32,13 +32,13 @@ html {
 .wrapper {
   display: grid;
   max-width: 1vh;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr 1fr ;
   grid-auto-rows: minmax(100px, auto);
   
 }
 header {
   padding: 40px;
-  grid-column: 1 / 5 ;
+  grid-column: 1 / -1 ;
 }
 header .my-name{
   grid-column: 1 / 5;
@@ -56,8 +56,12 @@ header #red-circle{
 }
 
 
-
+  
 .social-container {
+  grid-column: 1/ -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px;
   margin: 10px;
 
@@ -67,7 +71,6 @@ header #red-circle{
   max-width: 300px;
   margin: 40px;
   padding: 20px;
-  display: inline;
 }
 
 .icons {
@@ -123,7 +126,8 @@ header #red-circle{
 .contact-container {
   grid-column: 1 / -1; 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: start;
 }
 
 .contact-container .contact-icons {
@@ -132,9 +136,11 @@ header #red-circle{
 }
 
 footer {
-  padding: 10px;
-margin: 10px;
-grid-column: 1 / -1;
-max-width: 100%;
-max-height: auto;
+  grid-column: 1 / -1;
+  grid-row: 14;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 }
+
