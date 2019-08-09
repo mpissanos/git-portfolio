@@ -5,7 +5,7 @@ html {
 @media (min-width: 576px) {
     html {
             font-size: 14px;
-    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -26,7 +26,9 @@ html {
     }
 }
 
-
+body{
+  max-width: 800px;
+}
 
 
 .wrapper {
@@ -58,7 +60,7 @@ header #red-circle{
 
   
 .social-container {
-  grid-column: 1/ -1;
+  grid-column: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,7 +70,7 @@ header #red-circle{
 }
 
 #social-icon{
-  max-width: 300px;
+  max-width: 400px;
   margin: 40px;
   padding: 20px;
 }
@@ -124,15 +126,18 @@ header #red-circle{
 
 
 .contact-container {
-  grid-column: 1 / -1; 
   display: flex;
-  align-items: flex-start;
-  justify-content: start;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.contact-container .contact-icons {
-  max-height: 100px;
-  max-width: 100px;
+.contact-container .contact-icons :nth-child(1) {
+  max-width: 300px;
+}
+
+.contact-container .contact-icons :nth-child(2) {
+  max-width: 300PX;
 }
 
 footer {
