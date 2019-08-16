@@ -163,7 +163,6 @@ main > .tagline {
  .card-image {
   height: 300px;
   width: auto;
-  border-radius: 60%;
   float: left;
   margin: 20px;
   display: inline-block;
